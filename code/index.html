@@ -45,23 +45,72 @@ Hire Me</button>
   </div>
 </section>
 
-<section id="Portfolio">
-  <h1 class="heading">PORTFOLIO</h1>
-  <div class="gallery">
-  <img src="./Assets/portfolios/IMG-5806 (1).JPG" alt="">
-  <img src="./Assets/portfolios/IMG-0032.JPG" alt="">
-  <img src="./Assets/portfolios/IMG-1229.JPG" alt="">
-  <img src="./Assets/portfolios/IMG-0017.JPG" alt="">
-  <img src="./Assets/portfolios/IMG-1305.JPG" alt="">
-  <img src="./Assets/portfolios/IMG-0009 (1).JPG" alt="">
-  <img src="./Assets/portfolios/IMG-1391.JPG" alt="">
-  <img src="./Assets/portfolios/IMG-5585.JPG" alt="">
-  <img src="./Assets/portfolios/IMG-1359.JPG" alt="">
-  <img src="./Assets/portfolios/IMG-0055.JPG" alt="">
-  <img src="./Assets/portfolios/IMG-5427.JPG" alt="">
-  <img src="./Assets/portfolios/IMG-6104.JPG" alt="">
-</div>
-</section>
+<!-- Container for the image gallery -->
+<div class="container">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+        <img src="./Assets/portfolios/IMG-1391.JPG" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+        <img src="./Assets/portfolios/IMG-5427.JPG" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+        <img src="./Assets/portfolios/IMG-5585.JPG" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+        <img src="./Assets/portfolios/IMG-6104.JPG" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+        <img src="./Assets/portfolios/IMG-5806 (1).JPG" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+        <img src="./Assets/portfolios/IMG-1359.JPG" style="width:100%">
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="./Assets/portfolios/IMG-0009.JPG" style="width:100%" onclick="currentSlide(1)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./Assets/portfolios/IMG-0017.JPG" style="width:100%" onclick="currentSlide(2)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./Assets/portfolios/IMG-0032.JPG" style="width:100%" onclick="currentSlide(3)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./Assets/portfolios/IMG-0055.JPG" style="width:100%" onclick="currentSlide(4)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./Assets/portfolios/IMG-1229.JPG" style="width:100%" onclick="currentSlide(5)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./Assets/portfolios/IMG-1305.JPG" style="width:100%" onclick="currentSlide(6)" alt="">
+      </div>
+    </div>
+  </div>
+
 
 <section id="contact">
   <h1 class="heading">CONTACT</h1>
@@ -69,5 +118,7 @@ Hire Me</button>
 </section>
 
 <footer>Created by Mya Washington</footer>
+<script src="script.js"></script>
+
 </body>
 </html>
